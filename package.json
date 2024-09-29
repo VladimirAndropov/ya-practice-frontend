@@ -1,0 +1,8 @@
+{
+    "scripts": {
+      "start": "ts-node script",
+      "build": "tsc  --declaration",
+      "build:dev": "tsc  --sourceMap",
+      "watch": "tsc  --watch"
+    }
+  } 

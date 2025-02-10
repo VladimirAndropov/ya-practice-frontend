@@ -13,6 +13,7 @@
 
 
 .header {
+filter: invert(100%);
 display: flex;
 position: relative;
 align-items: center;

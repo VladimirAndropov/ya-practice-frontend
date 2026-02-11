@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2em;
+  border: 2px solid #51c98f;
+  border-radius: 8px;
+
+}
+
+.label {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  font-size: 1.2em;
+  line-height: 1.1;
+}
+
+.input {
+  height: 30px;
+  padding: 5px;
+  flex-grow: 1;
+  font-size: 1em;
+  line-height: 1.1;
+}

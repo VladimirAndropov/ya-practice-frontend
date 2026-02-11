@@ -1,0 +1,19 @@
+.height {
+  height: 100px;
+}
+
+.width-big {
+  width: 100px;
+}
+
+.width-small {
+  width: 50px;
+}
+
+.background-red {
+  background-color: red;
+}
+
+.background-blue {
+  background-color: blue;
+}

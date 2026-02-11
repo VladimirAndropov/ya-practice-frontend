@@ -1,0 +1,45 @@
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.user {
+  font-size: 1.2em;
+  line-height: 1.1;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+  border-radius: 8px;
+}
+
+.user span {
+  font-weight: 800;
+  color: chocolate
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  line-height: 1.1;
+  padding-left: 20px;
+  padding-top: 20px;
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+.error span {
+  font-weight: 800;
+  color: red
+}
+
+.warning {
+  font-size: 1.6em;
+  line-height: 1.1;
+  margin: 0;
+}

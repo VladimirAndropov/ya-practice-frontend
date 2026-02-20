@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://code.s3.yandex.net/analytics/practicum_ym_id.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script>
+            const [practicumCookieId] = document.cookie.split('; ').filter(el => el.startsWith('no_auth_practicum_tracking_id'));
+            let currentCookie = decodeURIComponent(practicumCookieId?.split('=')[1] || '');
+        
+            if(!practicumCookieId) {
+                currentCookie = crypto.randomUUID();
+                document.cookie = `no_auth_practicum_tracking_id=${currentCookie}; path=/; SameSite=None; Secure; expires=${new Date(new Date().setFullYear(new Date().getFullYear() + 10))};`
+            }
+
+            window.addEventListener('message', (event) => {
+                if(event?.data === 'no_auth_practicum_tracking_id') {
+                    window.parent.postMessage(JSON.stringify({ value: currentCookie, name: 'no_auth_practicum_tracking_id' }), '*');
+                }
+            });
+
+    </script>
+</head>
+<body></body></html>
